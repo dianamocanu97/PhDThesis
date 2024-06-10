@@ -15,3 +15,4 @@ for i in range(1,len(gens)):
 		beta.append(gens[i]*gens[j])
 
 beta
+len(beta)
