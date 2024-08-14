@@ -1,7 +1,11 @@
-This file contains the solutions to the S-unit equations of the 6 fields L described in Chapter 2, Corollary . 
+This file contains the solutions to the S-unit equations over the first 6 fields L listed in Chapter 3, Corollary 78.
+For each L, S represents the set of primes above 2 in L.
+
+These were computed using the S-unit solver implemented in Sage:
+https://doc.sagemath.org/html/en/reference/number_fields/sage/rings/number_field/S_unit_solver.html
 
 L.<a>=NumberField(x^2-26)
-S = L.primes_above(2); S
+S = L.primes_above(2)
 sols=[((0, -1, 1), (1, 0, 0), 2, -1), ((0, 1, -1), (0, 1, -1), 1/2, 1/2)]
 
 ----------------------------------------
