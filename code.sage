@@ -31,8 +31,7 @@ listL
 
 # Creation of a function 'sols' which computes the S-units of a field L, where S is the set of primes above 2
 
-def sols(NF):
-	S = NF.primes_above(2)
+def sols(NF,S):
 	sols = solve_S_unit_equation(NF, S)
 	return sols
 
@@ -42,7 +41,7 @@ def check(NF):
 	try:
 		ok=True
 		S = NF.primes_above(2)
-		sols2 = sols(NF)
+		sols2 = sols(NF,S)
 		for s in sols2:
 			X=s[2]
 			Y=s[3]
